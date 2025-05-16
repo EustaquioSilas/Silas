@@ -1,98 +1,110 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Silas Eustáquio - Links</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Inter', sans-serif; /* Aplica a fonte Inter ao corpo */
-            background-color: #d2b48c; /* Cor de fundo Tan/Castanho Claro */
-            display: flex; /* Usa flexbox para centralizar o conteúdo */
-            justify-content: center; /* Centraliza horizontalmente */
-            align-items: flex-start; /* Alinha ao topo verticalmente */
-            min-height: 100vh; /* Altura mínima de 100% da viewport */
-            padding: 20px; /* Espaçamento interno */
-            box-sizing: border-box; /* Inclui padding na largura/altura */
-        }
-        .container {
-            width: 100%; /* Largura total */
-            max-width: 400px; /* Largura máxima para desktop/tablet */
-            background-color: #fffaf0; /* Fundo creme para o container */
-            border-radius: 12px; /* Cantos arredondados */
-            padding: 24px; /* Espaçamento interno */
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
-            text-align: center; /* Centraliza o texto */
-        }
-        .profile-picture {
-            width: 96px; /* Largura da imagem de perfil */
-            height: 96px; /* Altura da imagem de perfil */
-            border-radius: 50%; /* Torna a imagem redonda */
-            object-fit: cover; /* Garante que a imagem cubra a área sem distorcer */
-            margin: 0 auto 16px auto; /* Centraliza e adiciona margem inferior */
-            border: 3px solid #f97316; /* Borda laranja (cor laranja-500 do Tailwind) */
-        }
-        .link-button {
-            display: flex; /* Usa flexbox para alinhar ícone/texto */
-            align-items: center; /* Centraliza verticalmente os itens */
-            justify-content: center; /* Centraliza horizontalmente o conteúdo */
-            width: 100%; /* Largura total */
-            background-color: #f97316; /* Cor de fundo do botão (laranja-500 do Tailwind) */
-            color: #ffffff; /* Cor do texto (branco) */
-            padding: 12px 20px; /* Espaçamento interno */
-            margin-bottom: 16px; /* Margem entre os botões */
-            border-radius: 8px; /* Cantos arredondados */
-            text-decoration: none; /* Remove sublinhado do link */
-            font-size: 16px; /* Tamanho da fonte */
-            font-weight: 600; /* Peso da fonte */
-            transition: background-color 0.3s ease; /* Transição suave ao passar o mouse */
-        }
-        .link-button:hover {
-            background-color: #ea580c; /* Cor de fundo mais escura ao passar o mouse (laranja-600 do Tailwind) */
-        }
-        .link-button:last-child {
-            margin-bottom: 0; /* Remove margem do último botão */
-        }
-        .link-button i {
-            margin-right: 8px; /* Margem à direita do ícone */
-        }
-        .link-button span {
-            text-align: center; /* Centraliza o texto do span (embora o flex no pai já centralize) */
-        }
-    </style>
-</head>
-<body>
+    <!DOCTYPE html>
+    <html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Silas Eustáquio - Links</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+        <style>
+            body {
+                font-family: 'Inter', sans-serif; /* Aplica a fonte Inter ao corpo */
+                background-color: #d2b48c; /* Cor de fundo mais escura - Tan/Castanho Claro */
+                display: flex; /* Usa flexbox para centralizar o conteúdo */
+                justify-content: center; /* Centraliza horizontalmente */
+                align-items: flex-start; /* Alinha ao topo verticalmente */
+                min-height: 100vh; /* Altura mínima de 100% da viewport */
+                padding: 20px; /* Espaçamento interno */
+                box-sizing: border-box; /* Inclui padding na largura/altura */
+            }
+            .container {
+                width: 100%; /* Largura total */
+                max-width: 400px; /* Largura máxima para desktop/tablet */
+                background-color: #fffaf0; /* Fundo creme para o container */
+                border-radius: 12px; /* Cantos arredondados */
+                padding: 24px; /* Espaçamento interno */
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+                text-align: center; /* Centraliza o texto */
+            }
+            .profile-picture {
+                width: 96px; /* Largura da imagem de perfil */
+                height: 96px; /* Altura da imagem de perfil */
+                border-radius: 50%; /* Torna a imagem redonda */
+                object-fit: cover; /* Garante que a imagem cubra a área sem distorcer */
+                margin: 0 auto 16px auto; /* Centraliza e adiciona margem inferior */
+                /* Borda laranja */
+                border: 3px solid #f97316; /* Cor laranja-500 do Tailwind */
+            }
+            .link-button {
+                display: flex; /* Usa flexbox para alinhar ícone/texto */
+                align-items: center; /* Centraliza verticalmente os itens */
+                justify-content: center; /* Centraliza horizontalmente o conteúdo */
+                width: 100%; /* Largura total */
+                /* Cor de fundo do botão (laranja) */
+                background-color: #f97316; /* Cor laranja-500 do Tailwind */
+                color: #ffffff; /* Cor do texto (branco) */
+                padding: 12px 20px; /* Espaçamento interno */
+                margin-bottom: 16px; /* Margem entre os botões */
+                border-radius: 8px; /* Cantos arredondados */
+                text-decoration: none; /* Remove sublinhado do link */
+                font-size: 16px; /* Tamanho da fonte */
+                font-weight: 600; /* Peso da fonte */
+                transition: background-color 0.3s ease; /* Transição suave ao passar o mouse */
+            }
+            .link-button:hover {
+                /* Cor de fundo mais escura ao passar o mouse (laranja-600) */
+                background-color: #ea580c;
+            }
+            .link-button:last-child {
+                margin-bottom: 0; /* Remove margem do último botão */
+            }
+            .link-button i {
+                /* Margem à direita do ícone */
+                margin-right: 8px;
+            }
+            .link-button span {
+                /* Permite que o texto ocupe o espaço necessário */
+                text-align: center; /* Centraliza o texto */
+            }
+             /* Ajuste de margem superior para o h1 quando a imagem está presente */
+            .container h1 {
+                margin-top: 0; /* Volta a margem padrão se a imagem estiver acima */
+            }
+        </style>
+    </head>
+    <body>
 
-    <div class="container">
-        <img src="by-content-id/uploaded:silas_boneco.png-1b79c97b-91f0-4016-93c2-e3bfa0b39996" alt="Foto de Perfil Silas Eustáquio" class="profile-picture" onerror="this.onerror=null; this.src='https://placehold.co/96x96/f97316/FFFFFF?text=SE';">
+        <div class="container">
+            <img src="https://drive.google.com/uc?export=view&id=1tGhEIdDVPP1ospDyJsbefe1pLZwTMPau" alt="Foto de Perfil Silas Eustáquio" class="profile-picture">
 
-        <h1 class="text-2xl font-bold mb-1 text-gray-800">Silas Eustáquio</h1>
-        <p class="text-gray-600 mb-6 text-sm">Diretor de Cena | Editor Finalizador</p>
+            <h1 class="text-2xl font-bold mb-6">Silas Eustáquio</h1>
+            <p class="text-gray-600 mb-8">Diretor de Cena | Editor Finalizador</p>
 
-        <a href="https://vimeo.com/silasdiretor" target="_blank" class="link-button">
-            <i class="fab fa-vimeo-v"></i> <span>Portfólio Silas Diretor (Vimeo)</span>
-        </a>
+            <a href="https://vimeo.com/silasdiretor" target="_blank" class="link-button">
+                <i class="fab fa-vimeo-v"></i> <span>Portfólio Silas Diretor (Vimeo)</span>
+            </a>
 
-        <a href="https://vimeo.com/birofilmes" target="_blank" class="link-button">
-            <i class="fab fa-vimeo-v"></i> <span>Biro Filmes (Vimeo)</span>
-        </a>
+            <a href="https://vimeo.com/birofilmes" target="_blank" class="link-button">
+                <i class="fab fa-vimeo-v"></i> <span>Biro Filmes (Vimeo)</span>
+            </a>
 
-        <a href="https://facebook.com/silas.eustaquio" target="_blank" class="link-button">
-            <i class="fab fa-facebook"></i> <span>Meu Perfil Pessoal (Facebook)</span>
-        </a>
+            <a href="https://facebook.com/silas.eustaquio" target="_blank" class="link-button">
+                <i class="fab fa-facebook"></i> <span>Meu Perfil Pessoal (Facebook)</span>
+            </a>
 
-        <a href="https://facebook.com/birofilmes" target="_blank" class="link-button">
-            <i class="fab fa-facebook"></i> <span>Biro Filmes (Facebook)</span>
-        </a>
+            <a href="https://facebook.com/birofilmes" target="_blank" class="link-button">
+                <i class="fab fa-facebook"></i> <span>Biro Filmes (Facebook)</span>
+            </a>
 
-        <a href="https://instagram.com/birofilmes" target="_blank" class="link-button">
-            <i class="fab fa-instagram"></i> <span>Instagram da Biro Filmes</span>
-        </a>
+            <a href="https://instagram.com/birofilmes" target="_blank" class="link-button">
+                <i class="fab fa-instagram"></i> <span>Instagram da Biro Filmes</span>
+            </a>
 
-    </div>
+            <a href="https://drive.google.com/file/d/1JEEIaUI2sKvs_vZPKtx9Cp_kj-TmSarp/view?usp=drive_link" target="_blank" class="link-button">
+                <i class="fas fa-camera"></i> <span>Locação de Equipamento</span>
+            </a>
+            </div>
 
-</body>
-</html>
+    </body>
+    </html>
